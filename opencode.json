@@ -1,0 +1,478 @@
+{
+  "plugin": [
+    "opencode-antigravity-auth",
+    "oh-my-opencode",
+    "opencode-alibaba-qwen3-auth",
+    "@tarquinen/opencode-dcp",
+    "opencode-supermemory@latest"
+  ],
+  "small_model": "zai-coding-plan/glm-4.6",
+  "provider": {
+    "github-copilot": {
+      "models": {
+        "claude-haiku": {
+          "limit": {
+            "context": 128000,
+            "output": 16000
+          }
+        },
+        "claude-opus": {
+          "limit": {
+            "context": 80000,
+            "output": 16000
+          }
+        },
+        "claude-opus-41": {
+          "limit": {
+            "context": 80000,
+            "output": 16000
+          }
+        },
+        "claude-opus-4.5": {
+          "limit": {
+            "context": 128000,
+            "output": 16000
+          }
+        },
+        "claude-3.5-sonnet": {
+          "limit": {
+            "context": 90000,
+            "output": 8192
+          }
+        },
+        "claude-3.7-sonnet": {
+          "limit": {
+            "context": 200000,
+            "output": 16384
+          }
+        },
+        "claude-3.7-sonnet-thought": {
+          "limit": {
+            "context": 200000,
+            "output": 16384
+          }
+        },
+        "claude-sonnet-4": {
+          "limit": {
+            "context": 128000,
+            "output": 16000
+          }
+        },
+        "claude-sonnet-4.5": {
+          "limit": {
+            "context": 128000,
+            "output": 16000
+          }
+        },
+        "gemini-2.0-flash-001": {
+          "limit": {
+            "context": 1000000,
+            "output": 8192
+          }
+        },
+        "gemini-2.5-pro": {
+          "limit": {
+            "context": 128000,
+            "output": 64000
+          }
+        },
+        "gemini-3-flash-preview": {
+          "limit": {
+            "context": 128000,
+            "output": 64000
+          }
+        },
+        "gemini-3-pro-preview": {
+          "limit": {
+            "context": 128000,
+            "output": 64000
+          }
+        },
+        "gpt-4.1": {
+          "limit": {
+            "context": 128000,
+            "output": 16384
+          }
+        },
+        "gpt-4o": {
+          "limit": {
+            "context": 64000,
+            "output": 16384
+          }
+        },
+        "gpt-5": {
+          "limit": {
+            "context": 128000,
+            "output": 128000
+          }
+        },
+        "gpt-5-codex": {
+          "limit": {
+            "context": 128000,
+            "output": 128000
+          }
+        },
+        "gpt-5-mini": {
+          "limit": {
+            "context": 128000,
+            "output": 64000
+          }
+        },
+        "gpt-5.1": {
+          "limit": {
+            "context": 128000,
+            "output": 128000
+          }
+        },
+        "gpt-5.1-codex": {
+          "limit": {
+            "context": 128000,
+            "output": 128000
+          }
+        },
+        "gpt-5.1-codex-max": {
+          "limit": {
+            "context": 128000,
+            "output": 128000
+          }
+        },
+        "gpt-5.1-codex-mini": {
+          "limit": {
+            "context": 128000,
+            "output": 100000
+          }
+        },
+        "gpt-5.2": {
+          "limit": {
+            "context": 128000,
+            "output": 64000
+          }
+        },
+        "grok-code-fast-1": {
+          "limit": {
+            "context": 128000,
+            "output": 64000
+          }
+        },
+        "o3": {
+          "limit": {
+            "context": 128000,
+            "output": 16384
+          }
+        },
+        "o3-mini": {
+          "limit": {
+            "context": 128000,
+            "output": 65536
+          }
+        },
+        "o4-mini": {
+          "limit": {
+            "context": 128000,
+            "output": 65536
+          }
+        },
+        "oswe-vscode-prime": {
+          "limit": {
+            "context": 200000,
+            "output": 64000
+          }
+        }
+      }
+    },
+    "google": {
+      "models": {
+        "antigravity-gemini-3-pro-low": {
+          "name": "Gemini 3 Pro Low (Antigravity)",
+          "limit": {
+            "context": 1048576,
+            "output": 65535
+          },
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "antigravity-gemini-3-pro-high": {
+          "name": "Gemini 3 Pro High (Antigravity)",
+          "limit": {
+            "context": 1048576,
+            "output": 65535
+          },
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "antigravity-gemini-3-flash": {
+          "name": "Gemini 3 Flash (Antigravity)",
+          "limit": {
+            "context": 1048576,
+            "output": 65536
+          },
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "gemini-3-pro-low": {
+          "name": "Gemini 3 Pro Low (Antigravity)",
+          "limit": {
+            "context": 1048576,
+            "output": 65535
+          },
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "gemini-3-pro-high": {
+          "name": "Gemini 3 Pro High (Antigravity)",
+          "limit": {
+            "context": 1048576,
+            "output": 65535
+          },
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "gemini-3-flash": {
+          "name": "Gemini 3 Flash (Antigravity)",
+          "limit": {
+            "context": 1048576,
+            "output": 65536
+          },
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "antigravity-claude-sonnet-4-5": {
+          "name": "Claude Sonnet 4.5 (Antigravity)",
+          "limit": {
+            "context": 200000,
+            "output": 64000
+          },
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "antigravity-claude-sonnet-4-5-thinking-low": {
+          "name": "Claude Sonnet 4.5 Think Low (Antigravity)",
+          "limit": {
+            "context": 200000,
+            "output": 64000
+          },
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "antigravity-claude-sonnet-4-5-thinking-medium": {
+          "name": "Claude Sonnet 4.5 Think Medium (Antigravity)",
+          "limit": {
+            "context": 200000,
+            "output": 64000
+          },
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "antigravity-claude-sonnet-4-5-thinking-high": {
+          "name": "Claude Sonnet 4.5 Think High (Antigravity)",
+          "limit": {
+            "context": 200000,
+            "output": 64000
+          },
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "antigravity-claude-opus-4-5-thinking-low": {
+          "name": "Claude Opus 4.5 Think Low (Antigravity)",
+          "limit": {
+            "context": 200000,
+            "output": 64000
+          },
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "antigravity-claude-opus-4-5-thinking-medium": {
+          "name": "Claude Opus 4.5 Think Medium (Antigravity)",
+          "limit": {
+            "context": 200000,
+            "output": 64000
+          },
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "antigravity-claude-opus-4-5-thinking-high": {
+          "name": "Claude Opus 4.5 Think High (Antigravity)",
+          "limit": {
+            "context": 200000,
+            "output": 64000
+          },
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "gemini-2.5-flash": {
+          "name": "Gemini 2.5 Flash (CLI)",
+          "limit": {
+            "context": 1048576,
+            "output": 65536
+          },
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "gemini-2.5-pro": {
+          "name": "Gemini 2.5 Pro (CLI)",
+          "limit": {
+            "context": 1048576,
+            "output": 65536
+          },
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "gemini-3-flash-preview": {
+          "name": "Gemini 3 Flash Preview (CLI)",
+          "limit": {
+            "context": 1048576,
+            "output": 65536
+          },
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "gemini-3-pro-preview": {
+          "name": "Gemini 3 Pro Preview (CLI)",
+          "limit": {
+            "context": 1048576,
+            "output": 65535
+          },
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "$schema": "https://opencode.ai/config.json"
+}
