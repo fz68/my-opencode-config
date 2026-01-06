@@ -2,9 +2,8 @@
   "plugin": [
     "opencode-antigravity-auth",
     "oh-my-opencode",
-    "opencode-alibaba-qwen3-auth",
-    "@tarquinen/opencode-dcp",
-    "opencode-supermemory@latest"
+  "opencode-alibaba-qwen3-auth",
+  "@tarquinen/opencode-dcp"
   ],
   "small_model": "zai-coding-plan/glm-4.6",
   "provider": {
@@ -471,6 +470,16 @@
             ]
           }
         }
+      }
+    }
+  },
+  "mcp": {
+    "exa": {
+      "type": "local",
+      "command": ["npx", "-y", "exa-mcp-server"],
+      "timeout": 60000,
+      "environment": {
+        "EXA_API_KEY": "your key"
       }
     }
   },

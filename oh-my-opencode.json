@@ -35,6 +35,7 @@
     "dcp_for_compaction": true,
     "preemptive_compaction_threshold": 0.75
   },
+  "disabled_mcps": ["websearch_exa"],
   "disabled_hooks": [
     "anthropic-context-window-limit-recovery"
   ]
