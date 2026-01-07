@@ -473,15 +473,5 @@
       }
     }
   },
-  "mcp": {
-    "exa": {
-      "type": "local",
-      "command": ["npx", "-y", "exa-mcp-server"],
-      "timeout": 60000,
-      "environment": {
-        "EXA_API_KEY": "your key"
-      }
-    }
-  },
   "$schema": "https://opencode.ai/config.json"
 }
