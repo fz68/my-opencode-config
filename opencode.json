@@ -2,8 +2,9 @@
   "plugin": [
     "opencode-antigravity-auth",
     "oh-my-opencode",
-  "opencode-alibaba-qwen3-auth",
-  "@tarquinen/opencode-dcp"
+    "opencode-alibaba-qwen3-auth",
+    "@tarquinen/opencode-dcp",
+	"opencode-beads"
   ],
   "small_model": "zai-coding-plan/glm-4.6",
   "provider": {
