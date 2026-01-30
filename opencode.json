@@ -1,12 +1,13 @@
 {
   "plugin": [
     "opencode-antigravity-auth",
-    "oh-my-opencode",
+    "oh-my-opencode@latest",
     "opencode-alibaba-qwen3-auth",
     "@tarquinen/opencode-dcp",
-	"opencode-beads"
+    "opencode-beads",
+    "opencode-supermemory@latest"
   ],
-  "small_model": "zai-coding-plan/glm-4.6",
+  "model": "zai-coding-plan/glm-4.7",
   "provider": {
     "github-copilot": {
       "models": {

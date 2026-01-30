@@ -2,10 +2,10 @@
   "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/master/assets/oh-my-opencode.schema.json",
   "google_auth": false,
   "agents": {
-    "Sisyphus": {
+    "sisyphus": {
       "model": "github-copilot/claude-opus-4.5"
     },
-    "Planner-Sisyphus": {
+    "prometheus": {
       "model": "github-copilot/claude-sonnet-4.5",
       "temperature": 0.3
     },
@@ -34,6 +34,13 @@
     "auto_resume": true,
     "dcp_for_compaction": true,
     "preemptive_compaction_threshold": 0.75
+  },
+  "tmux": {
+    "enabled": true,
+    "layout": "main-vertical",
+    "main_pane_size": 60,
+    "main_pane_min_width": 120,
+    "agent_pane_min_width": 40
   },
   "disabled_hooks": [
     "anthropic-context-window-limit-recovery"
