@@ -4,7 +4,7 @@
     "oh-my-opencode-slim",
     "@cortexkit/opencode-magic-context@latest"
   ],
-  "model": "glm-5-turbo",
+  "model": "zai-coding-plan/glm-5-turbo",
   "provider": {
     "github-copilot": {
       "models": {
