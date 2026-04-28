@@ -1,19 +1,12 @@
 #!/bin/bash
+# Install script for opencode configuration
 
-# The directory where opencode configurations are stored.
+set -e
+
 CONFIG_DIR="$HOME/.config/opencode"
-
-# The directory where this script is located.
-SOURCE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-
-# Create the configuration directory if it does not exist.
-echo "Checking for config directory: $CONFIG_DIR"
 mkdir -p "$CONFIG_DIR"
 
-# Copy the configuration files.
-echo "Copying configuration files to $CONFIG_DIR..."
-cp "$SOURCE_DIR/opencode.json" "$CONFIG_DIR/"
-cp "$SOURCE_DIR/oh-my-opencode.json" "$CONFIG_DIR/"
-cp "$SOURCE_DIR/dcp.jsonc" "$CONFIG_DIR/"
+echo "Installing opencode.json..."
+cp opencode.json "$CONFIG_DIR/opencode.json"
 
-echo "✅ Opencode configuration updated successfully!"
+echo "Done! Restart opencode to apply changes."

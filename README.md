@@ -1,21 +1,26 @@
 # My Opencode Configuration
 
-This repository contains personal configuration files for Opencode.
+我的个人 Opencode 配置文件，使用 oh-my-opencode-slim 和 magic-context。
 
-## Installation
+## 包含插件
 
-This script will copy the configuration files to the `~/.config/opencode` directory, creating it if it doesn't already exist.
+- [oh-my-opencode-slim](https://github.com/code-yeongyu/oh-my-opencode) - 精简版配置管理
+- [@cortexkit/opencode-magic-context](https://github.com/code-yeongyu/opencode-magic-context) - 智能上下文管理
 
-To apply the configurations, run the `update_config.sh` script.
+## 安装
 
-1.  **Make the script executable:**
-    ```bash
-    chmod +x update_config.sh
-    ```
+```bash
+# 复制配置文件
+mkdir -p ~/.config/opencode
+cp opencode.json ~/.config/opencode/opencode.json
 
-2.  **Run the script:**
-    ```bash
-    ./update_config.sh
-    ```
+# 重启 opencode 使配置生效
+opencode
+```
 
-The script will then copy all relevant `.json` and `.jsonc` files to the correct directory.
+## 配置说明
+
+- 使用 zai-coding-plan/glm-4.7 作为默认模型
+- 配置了多种 provider 的模型限制 (GitHub Copilot, Google)
+- 禁用了 explore 和 general agent
+- 关闭了自动 compaction
