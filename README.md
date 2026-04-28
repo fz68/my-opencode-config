@@ -24,7 +24,7 @@ opencode
 
 ## 配置说明
 
-- 使用 zai-coding-plan/glm-4.7 作为默认模型
+- 使用 glm-5-turbo 作为默认模型
 - 配置了多种 provider 的模型限制 (GitHub Copilot, Google)
 - 禁用了 explore 和 general agent
 - 关闭了自动 compaction
